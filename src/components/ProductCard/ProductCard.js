@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
 import "./ProductCard.scss";
 import strings from "../../utils/strings";
 import products from "../../data";
@@ -11,7 +13,7 @@ function ProductCard() {
       <div className="info-card ">
         <div className="category-icon-container">
           <p>{category}</p>
-          <p>n</p>
+          <FontAwesomeIcon icon={faEllipsis} />
         </div>
         <div className="info-bottom-container">
           <div className="price-title-container">

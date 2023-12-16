@@ -13,7 +13,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 32px;
 
     ul {
@@ -67,7 +67,7 @@
     margin-left: 23px;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: space-evenly;
 
     p {
