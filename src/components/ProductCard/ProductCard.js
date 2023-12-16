@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import "./ProductCard.scss";
 import strings from "../../utils/strings";
+import truncateText from "../../utils/truncateText";
 
 function ProductCard({ product, color }) {
   const { title, price, category, rating } = product;
@@ -20,7 +21,7 @@ function ProductCard({ product, color }) {
         <div className="info-bottom-container">
           <div className="price-title-container">
             <p className="price">{price + strings.currency}</p>
-            <p className="title">{title}</p>
+            <p className="title">{truncateText(title, 6)}</p>
           </div>
           <div className="count-container">
             <p>{strings.ratingsCount}</p>

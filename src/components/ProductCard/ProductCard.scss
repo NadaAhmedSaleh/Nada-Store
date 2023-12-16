@@ -88,12 +88,14 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
     }
 
     .title {
         font-size: 10px;
         line-height: 15.75px;
-        text-align: end;
+        padding-left: auto;
+        max-width: 50%;
     }
 
     .count-container {
