@@ -5,10 +5,14 @@ import ProductCard from "../ProductCard/ProductCard";
 function Products() {
   return (
     <div className="products-container">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      <ProductCard color={"--red-color"} />
+      <ProductCard color={"--orange-color"} />
+      <ProductCard color={"--green-color"} />
+      <ProductCard color={"--blue-color"} />
+      <ProductCard color={"--red-color"} />
+      <ProductCard color={"--orange-color"} />
+      <ProductCard color={"--red-color"} />
+      <ProductCard color={"--orange-color"} />
     </div>
   );
 }

@@ -1,12 +1,15 @@
-$blue-purple-color: #5747ea;
-$orange-color: #ff8b64;
-$red-color: #ff5e7d;
-$blue-color: #55c2e6;
-$green-color: #4bcf82;
-$purple-color: #7335d2;
-$yellow-color: #f1c75b;
-$white-color: #ffffff;
+// colored upper part in product card colors
+:root {
+    --orange-color: #ff8b64;
+    --red-color: #ff5e7d;
+    --blue-color: #55c2e6;
+    --green-color: #4bcf82;
+    --purple-color: #7335d2;
+    --yellow-color: #f1c75b;
+}
 
+$blue-purple-color: #5747ea;
+$white-color: #ffffff;
 $primary-color: #0e1323;
 $secondary-color: #1c204b;
 $text-color: $white-color;
@@ -14,4 +17,6 @@ $secondary-text-color: #bbc0ff;
 $icons-color: #bbc0ff;
 $shadow-color: #0000005c;
 
-$mobile-breakpoint: 375px;
+$first-breakpoint: 1900px;
+$second-breakpoint: 992px;
+$third-breakpoint: 768px;

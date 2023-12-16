@@ -2,10 +2,10 @@
 
 .product-card {
     width: 255px;
+    height: 241px;
 }
 
 .colored-card {
-    background-color: $red-color;
     height: 160px;
     position: relative;
     z-index: 1;
@@ -72,9 +72,10 @@
     line-height: 14.22px;
 }
 
-@media (max-width: $mobile-breakpoint) {
+@media (max-width: $third-breakpoint) {
     .product-card {
         width: 327px;
+        height: 160px;
     }
 
     .info-card {

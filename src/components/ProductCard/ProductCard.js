@@ -1,15 +1,18 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import "./ProductCard.scss";
 import strings from "../../utils/strings";
 import products from "../../data";
 
-function ProductCard() {
+function ProductCard({ color }) {
   const { title, price, category, rating } = products[0];
   return (
     <div className="product-card">
-      <div className="colored-card" />
+      <div
+        className="colored-card"
+        style={{ backgroundColor: `var(${color})` }}
+      />
       <div className="info-card ">
         <div className="category-icon-container">
           <p>{category}</p>

@@ -1,13 +1,11 @@
 import React from "react";
-import './App.scss';
-import FiltersCard from "./components/FiltersCard/FiltersCard";
-import Products from "./components/Products/Products";
+import "./App.scss";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
-    <div className="app">
-      <FiltersCard />
-      <Products />
+    <div>
+      <HomePage />
     </div>
   );
 }

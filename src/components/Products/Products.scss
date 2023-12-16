@@ -1,5 +1,33 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .products-container {
-    
+    height: 518px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 16px;
+    row-gap: 36px;
+    margin-left: 16px;
+    overflow: auto;
+}
+
+@media (max-width: $first-breakpoint) {
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: $second-breakpoint) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $third-breakpoint) {
+    .products-container {
+        grid-template-columns: repeat(1, 1fr);
+        height: auto;
+        row-gap: 16px;
+        margin-left: 0px;
+        overflow: auto;
+    }
 }

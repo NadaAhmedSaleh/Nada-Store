@@ -3,6 +3,7 @@
 .filters-card {
     width: 255px;
     height: 518px;
+    margin-bottom: 16px;
 }
 
 .filters-data-card {
@@ -89,7 +90,7 @@
     height: 98px;
 }
 
-@media (max-width: $mobile-breakpoint) {
+@media (max-width: $third-breakpoint) {
     .filters-card {
         width: 327px;
         height: 203px;
