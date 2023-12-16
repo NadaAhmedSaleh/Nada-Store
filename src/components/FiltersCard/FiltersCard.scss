@@ -1,0 +1,140 @@
+@import "../../styles/main.scss";
+
+.filters-card {
+    width: 255px;
+    height: 518px;
+}
+
+.filters-data-card {
+    background-color: $secondary-color;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 32px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 106px;
+        list-style: none;
+
+        li {
+            color: $secondary-text-color;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21.33px;
+        }
+
+        li:hover {
+            cursor: pointer;
+            color: $text-color;
+        }
+    }
+}
+
+.title-card {
+    background-color: $blue-purple-color;
+    height: 354px;
+    position: relative;
+    z-index: 2;
+    top: -518px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 138px;
+        height: 138px;
+        border-radius: 50%;
+        border: 3px solid $white-color;
+        box-shadow: 2px 2px 5px 1px $shadow-color;
+    }
+}
+
+.title-container {
+    flex: 1;
+    margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 17.78px;
+        color: $secondary-text-color;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 47.4px;
+        color: $text-color;
+        letter-spacing: 12px;
+    }
+}
+.sales-title {
+    height: 98px;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .filters-card {
+        width: 327px;
+        height: 203px;
+    }
+
+    .title-card {
+        height: 133px;
+        top: -203px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .img-container {
+        img {
+            width: 64px;
+            height: 64px;
+            box-shadow: none;
+        }
+    }
+
+    .title-container {
+        margin-left: 20px;
+        height: 50px;
+        width: 172px;
+        margin-right: 20px;
+
+        h3 {
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 28.44px;
+            letter-spacing: normal;
+            margin-right: 5px;
+        }
+    }
+
+    .filters-data-card {
+        padding: 0px;
+        ul {
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            flex-direction: row;
+        }
+    }
+    .sales-title {
+        display: flex;
+    }
+}
