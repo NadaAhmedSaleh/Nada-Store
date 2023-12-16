@@ -3,10 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import "./ProductCard.scss";
 import strings from "../../utils/strings";
-import products from "../../data";
 
-function ProductCard({ color }) {
-  const { title, price, category, rating } = products[0];
+function ProductCard({ product, color }) {
+  const { title, price, category, rating } = product;
   return (
     <div className="product-card">
       <div
