@@ -8,26 +8,20 @@
     row-gap: 36px;
     margin-left: 16px;
     overflow: auto;
-}
 
-@media (max-width: $first-breakpoint) {
-    .products-container {
+    @media (max-width: $first-breakpoint) {
         grid-template-columns: repeat(3, 1fr);
     }
-}
 
-@media (max-width: $second-breakpoint) {
-    .products-container {
+    @media (max-width: $second-breakpoint) {
         grid-template-columns: repeat(2, 1fr);
     }
-}
 
-@media (max-width: $third-breakpoint) {
-    .products-container {
+    @media (max-width: $third-breakpoint) {
         grid-template-columns: repeat(1, 1fr);
         height: auto;
         row-gap: 16px;
-        margin-left: 0px;
+        margin-left: 0;
         overflow: auto;
         height: 350px;
     }

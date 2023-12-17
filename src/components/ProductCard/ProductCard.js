@@ -14,11 +14,11 @@ function ProductCard({ product, color }) {
         style={{ backgroundColor: `var(${color})` }}
       />
       <div className="info-card ">
-        <div className="category-icon-container">
+        <section className="category-icon-container">
           <p>{category}</p>
           <FontAwesomeIcon icon={faEllipsis} />
-        </div>
-        <div className="info-bottom-container">
+        </section>
+        <section className="info-bottom-container">
           <div className="price-title-container">
             <p className="price">{price + strings.currency}</p>
             <p className="title">{truncateText(title, 6)}</p>
@@ -27,7 +27,7 @@ function ProductCard({ product, color }) {
             <p>{strings.ratingsCount}</p>
             <p>{rating.count}</p>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
